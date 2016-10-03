@@ -1,26 +1,41 @@
 <!DOCTYPE html> 
 <html><head> 
         <meta charset="UTF-8"> 
-        <title>Ejercicio 02</title> 
+        <title>Ejercicio 01</title> 
 </head><body> 
 <?php 
-//inicializamos 
-echo "Array ordenado inicializado en la declaración con nombres en los campos y recorrido con un for: <hr>"; 
-echo "EQUIPO DE BALONCESTO: <hr>"
+
+echo "2. Array ordenado inicializado en la declaración con nombres en los campos y recorrido con un for sin mostrar campo y mostrando: <br> <br>"; 
+echo "Equipo de baloncesto: <hr>";
+
 $array1 = array ( 
-    'ID' => 6666, 
-    'Nombre' => 'Eli', 
-    'Apellido' => 'Galán Linares', 
-    'Edad' => 24 ,
-    'Nacionalidad' => 'Española' 
+    'alero' => 'Marta', 
+    'pivot' => 'Ana ', 
+    'base' => 'Merchi', 
+    'escolta' => 'Alicia',
+    'al pivot' => 'Lola' 
 ); 
 
+foreach ($array1 as $position=>$element){ 
+    echo  $element . '<br>'; 
 
-//foreach clave=>elemento 
-echo "<br>"; 
+
+} 
+
+echo "<br>";
+echo "Posición y nombre del jugador : <br> <hr>";
+
 foreach ($array1 as $position=>$element){ 
     echo $position . ": " . $element . '<br>'; 
+
+
 } 
+
+
+
+
+
+
 
 ?> 
 </body></html>

@@ -5,9 +5,7 @@
 </head><body> 
 <?php 
 
-echo "Array ordenado inicializado en la declaración y recorrido con un for: <hr>"; 
-
-
+echo "1. Array ordenado inicializado en la declaración y recorrido con un for: <hr>"; 
 
 $array1 = array(6666,"Eli", 24, true, false, "Galán"); 
 
