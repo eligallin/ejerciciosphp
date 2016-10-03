@@ -1,25 +1,29 @@
 <!DOCTYPE html> 
 <html><head> 
         <meta charset="UTF-8"> 
-        <title>ejemplo 01</title> 
+        <title>Ejercicio 01</title> 
 </head><body> 
 <?php 
-//inicializamos 
+
 echo "Array ordenado inicializado en la declaración y recorrido con un for: <hr>"; 
-$array1 = array ( 
-    'ID' => 6666, 
-    'Nombre' => 'Eli', 
-    'Apellido' => 'Galán Linares', 
-    'Edad' => 24 ,
-    'Nacionalidad' => 'Española' 
-); 
 
 
-//foreach clave=>elemento 
-echo "<br>"; 
+
+$array1 = array(6666,"Eli", 24, true, false, "Galán"); 
+
+$elemento0 = $array1[0]; 
+//El elemento 1 es $elemento0 y también $array1[0]
+
+
+//lo podemos recorrer con el bucle foreach de dos maneras: 
+echo "<hr> Recorrido mediante bucle foreach simple <br>"; 
+foreach ($array1 as $element){ 
+    echo $element . '<br>'; 
+} 
+//foreach clave->elemento 
+echo "<hr> Recorrido mediante bucle foreach con posicion->elemento <br>"; 
 foreach ($array1 as $position=>$element){ 
     echo $position . ": " . $element . '<br>'; 
 } 
-
 ?> 
 </body></html>
