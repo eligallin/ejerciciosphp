@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html><head> 
+        <meta charset="UTF-8"> 
+        <title>Ejercicio 06</title> 
+</head><body> 
+
+<?php 
+
+echo '<meta charset="UTF-8">'; 
+if(isset($_POST) && !empty($_POST)){ 
+    echo "Recibido!! Mira la URL en tu navegador. Está 'limpia' <hr>"; 
+    echo "Bienvenido $_POST[nombre]"; 
+    //var_dump nos puede ayudar a entender lo que hemos recibido 
+    var_dump($_POST); 
+} 
+ else { 
+     echo "No hemos recibido nada!"; 
+} 
+
+
+</body></html> 
