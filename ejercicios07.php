@@ -1,50 +1,48 @@
-<!DOCTYPE html> 
-<html><head> 
-        <meta charset="UTF-8"> 
-        <title>Ejercicio 07</title> 
-</head><body> 
+<!-- Ejercicio7.php y Rectangulo.php
+
+Crea una clase Rectangulo con dos atributos base y altura. 
+Debe incluir los métodos:
+- constructor
+- perimetro
+- superficie
+- añade también los getters y setters
+En el fichero Ejercicio7 debes crear un ejemplar de la clase anterior y usar
+los métodos disponibles. La variedad de pruebas a gusto del alumno.
+ -->
 <?php
-//Probando los métodos mágicos
-class Ractangulo
-{
-    private $_base; 
+class Rectangulo{ 
+    private $_base;
     private $_altura;
-     
-   
 
-    public function __construct($base, $altura)   //así los públicoswww
+    function __construct($base, $altura)
     {
-
-        echo "Construyento nuevo rectangulo <hr> ";
         $this->_base = $base;
         $this->_altura = $altura;
-      
+    } 
+    public function __toString(){
+        return "Rectangulo de $this->_base x $this->_altura";
+    }
+    function setBase($base){
+        $this->_base = $base;
+    }
+    function getBase(){
+        return $this->_base;
+    }
+    function setAltura($altura){
+        $this->_altura = $altura;
+    }
+    function getAltura(){
+        return $this->_altura;
     }
 
-    public function _toString(){
 
-        return "Rectangulo de $this->_base x &this->_altura";
+    function perimetro(){
+        return 2*($this->_base + $this->_altura);
     }
-
-    public function perimetro()
-    {
-
-      return $this->_base*2 + $this->_altura*2;
-    }
-
-
-   public  function superficie()
-    {
-        
-         return $this->_base* $this->_altura;
+    function superficie(){
+        return $this->_base * $this->_altura;
     }
 }
 
 
-
-
-
-
 ?>
-
-</body></html> 
